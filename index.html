@@ -310,7 +310,6 @@ img { max-width: 100%; display: block; }
         <a href="#games" data-go="games">Games</a>
         <a href="#stream" data-go="stream">Stream</a>
         <a href="#about" data-go="about">About</a>
-        <a href="#shop" data-go="shop">Shop<span class="soon">SOON</span></a>
         <a href="#contact" data-go="contact">Contact</a>
       </nav>
     </div>
@@ -366,13 +365,6 @@ img { max-width: 100%; display: block; }
       <div class="eyebrow">About us</div>
       <h1>Meet Eric and Chris</h1>
       <p>Two longtime friends making the kinds of games we want to play.</p>
-    </div>
-  </section>
-  <section class="view page-head" data-view="shop" hidden>
-    <div class="wrap">
-      <div class="eyebrow">Shop</div>
-      <h1>Merch is on its way</h1>
-      <p>Shirts, stickers, and other goodies from the Simple Space Universe are in the works.</p>
     </div>
   </section>
   <section class="view page-head" data-view="contact" hidden>
@@ -511,18 +503,6 @@ img { max-width: 100%; display: block; }
     </div>
   </div>
 
-  <!-- ================= SHOP ================= -->
-  <div class="view wrap page-body" data-view="shop" hidden>
-    <div class="panel merch-teaser">
-      <h2>The shop opens soon</h2>
-      <p>We're designing our first merch now. Follow us on YouTube or check out Horizons S.S.G. on Steam to hear when it drops.</p>
-      <div class="store-row" style="justify-content:center;margin-top:18px">
-        <a class="btn btn-navy js-link" data-link="steam" href="#" target="_blank" rel="noopener">Horizons S.S.G. on Steam</a>
-        <a class="btn btn-line js-link" data-link="youtube" href="#" target="_blank" rel="noopener">Follow on YouTube</a>
-      </div>
-    </div>
-  </div>
-
   <!-- ================= CONTACT ================= -->
   <div class="view wrap page-body" data-view="contact" hidden>
     <div class="contact-grid">
@@ -617,7 +597,7 @@ document.querySelectorAll(".js-email").forEach(function (emailElement) { emailEl
 document.querySelectorAll(".js-year").forEach(function (yearElement) { yearElement.textContent = new Date().getFullYear(); });
 
 /* ---------- Page switching (Home / Games / Stream / About / Shop / Contact) ---------- */
-const pageNames = ["home", "games", "stream", "about", "shop", "contact"];
+const pageNames = ["home", "games", "stream", "about", "contact"];
 function showPage(pageName, scrollToTop) {
   if (!pageNames.includes(pageName)) pageName = "home";
   document.querySelectorAll(".view").forEach(function (viewElement) {
